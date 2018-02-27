@@ -1,0 +1,21 @@
+'1508767805692':
+  alias: Pause Spotify
+  sequence:
+  - alias: pause_spotify
+    data:
+      entity_id: media_player.spotify
+    service: media_player.media_pause
+
+restart_ha:  
+  alias: Restart HA
+  sequence:
+    - service: homeassistant.restart
+
+remote_control:
+  sequence:
+
+tv_remote_control:
+  sequence:
+
+aircon_remote_control:
+  sequence:

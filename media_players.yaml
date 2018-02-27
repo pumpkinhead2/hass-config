@@ -1,0 +1,9 @@
+
+- platform: spotify
+  client_id: ab109e8b46e944398df4241b97e31895
+  client_secret: !secret spotify_key
+  aliases:
+    abc123def333: 'Office'
+
+# Google Chromecast
+- platform: cast

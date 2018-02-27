@@ -1,0 +1,145 @@
+Currently:
+  - sensor.time_date
+  - sun.sun
+  - sensor.pws_uv
+  - sensor.bom_campbelltown_air_temp_c
+  - sensor.bom_campbelltown_cloud
+  - sensor.bom_campbelltown_rain_today
+  - sensor.bom_campbelltown_relative_humidity
+  - sensor.bom_campbelltown_wind_speed_kmh
+  - sensor.bom_campbelltown_wind_gust_kmh
+  - sensor.bom_campbelltown_wind_direction
+
+Security Cams:
+  - camera.doorbell
+  - camera.3dprinter
+  - camera.front
+  - camera.office
+
+Living Room:
+  - sensor.temperature_158d0001ab4307
+  - sensor.pressure_158d0001e421a9
+  - sensor.humidity_158d0001ab4307
+  - sensor.illumination_34ce00fb71d1
+  - media_player.wlcast
+
+Office:
+  - sensor.temperature_158d0001e421a9
+  - sensor.pressure_158d0001ab4307
+  - sensor.humidity_158d0001e421a9
+
+# Office Airconditioning:
+#   name: "Airconditioning"
+#   entities:
+#     - switch.auto_23c
+
+# Office TV:
+#   name: "TV"
+#   entities:
+#     - switch.office_tv_onoff
+
+Bedroom:
+  - light.bedroom_lamp_pat
+  - light.bedroom_lamp_des
+
+Quicklinks:
+  - weblink.main_router_netgear_wndr3700
+  - weblink.upstairs_router_xiaomi_mi3
+  - weblink.octopi_cocoon_3d_printer
+
+Device List:
+  - group.all_devices
+
+Forecast:
+  - sensor.pws_weather_1d_metric
+  - sensor.pws_weather_1n_metric
+  - sensor.pws_weather_2d_metric
+  - sensor.pws_weather_2n_metric
+  - sensor.pws_weather_3d_metric
+  - sensor.pws_weather_3n_metric
+  - sensor.pws_weather_4d_metric
+  - sensor.pws_weather_4n_metric
+
+System:
+  - sensor.speedtest_ping
+  - sensor.speedtest_download
+  - sensor.speedtest_upload
+  - sensor.cpu_used
+  - sensor.disk_free_
+  - sensor.ram_available
+  - sensor.version
+  - script.restart_ha
+  
+Living Room TV:
+  name: TV
+  entities:
+    - switch.tv_onoff
+    - switch.tv_vol
+    - switch.tv_vol_2
+    - switch.tv_ch
+    - switch.tv_ch_2
+
+Living Room Aircon:
+  - switch.23c_auto
+  - switch.26c_auto
+  - switch.28c_auto
+
+default_view:
+  name: Overview
+  icon: mdi:home
+  view: yes
+  entities:
+    - camera.doorbell
+    - camera.radar
+    - group.currently
+#    - group.device_list
+    - media_player.spotify
+#    - group.system
+
+weather_forecast_view:
+  name: Forecast
+  view: yes
+  entities:
+    - group.forecast
+
+office_view:
+  name: Office
+  view: yes
+  entities:
+    - group.office
+    - group.remote_control
+    - group.tv_remote_control
+    - group.aircon_remote_control
+    - light.office_desk_lamp
+    - group.office_tv
+    - group.office_airconditioning
+    - media_player.office_tv
+    - media_player.office_speaker
+
+living_room_view:
+  name: Living Room
+  view: yes
+  entities:
+    - group.living_room
+    - group.living_room_tv
+    - group.living_room_aircon
+    - light.gateway_light_34ce00fb71d1
+    - media_player.wlcast
+
+bedroom_view:
+  name: Bedroom
+  view: yes
+  entities:
+    - group.bedroom
+
+cams_view:
+  name: Security
+  view: yes
+  entities:
+    - group.security_cams
+
+quicklinks:
+  name: Quicklinks
+  view: yes
+  entities:
+    - group.quicklinks

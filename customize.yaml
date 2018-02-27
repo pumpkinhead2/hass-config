@@ -1,0 +1,231 @@
+binary_sensor.switch_158d00016be03c:
+  friendly_name: Desk Button
+binary_sensor.door_window_sensor_158d0001d62f08:
+  friendly_name: Garage Door
+binary_sensor.door_window_sensor_158d00019f5182:
+  friendly_name: Front Door
+light.gateway_light_34ce00fb71d1:
+  friendly_name: Gateway Light
+sensor.illumination_34ce00fb71d1:
+  friendly_name: Illumination Level
+sensor.temperature_158d0001e421a9:
+  friendly_name: Office Air Temperature
+  icon: mdi:temperature-celsius
+sensor.temperature_158d0001ab4307:
+  friendly_name: Living Room Air Temperature
+  icon: mdi:temperature-celsius
+sensor.humidity_158d0001e421a9:
+  friendly_name: Office Humidity
+  icon: mdi:water-percent
+sensor.humidity_158d0001ab4307:
+  friendly_name: Living Room Humidity
+  icon: mdi:water-percent
+sensor.pressure_158d0001ab4307:
+  friendly_name: Office Air Pressure
+  icon: mdi:weather-cloudy
+sensor.pressure_158d0001e421a9:
+  friendly_name: Living Room Air Pressure
+  icon: mdi:weather-cloudy
+weblink.main_router_netgear_wndr3700:
+  icon: mdi:router-wireless
+weblink.upstairs_router_xiaomi_mi3:
+  icon: mdi:router-wireless
+weblink.octopi_cocoon_3d_printer:
+  icon: mdi:printer-3d
+sensor.bom_campbelltown_air_temp_c:
+  friendly_name: Air Temperature
+  icon: mdi:temperature-celsius
+sensor.bom_campbelltown_cloud:
+  friendly_name: Cloud Cover
+  icon: mdi:weather-cloudy
+sensor.bom_campbelltown_rain_today:
+  friendly_name: Rain
+  icon: mdi:weather-rainy
+sensor.bom_campbelltown_relative_humidity:
+  friendly_name: Relative Humidity
+  icon: mdi:water-percent
+sensor.bom_campbelltown_wind_speed_kmh:
+  friendly_name: Wind Speed
+  icon: mdi:weather-windy-variant
+sensor.bom_campbelltown_wind_gust_kmh:
+  friendly_name: Wind Gust
+  icon: mdi:weather-windy
+sensor.bom_campbelltown_wind_direction:
+  friendly_name: Wind Direction
+  icon: mdi:sign-direction
+switch.26c_auto:
+  icon: mdi:ac-unit
+# sensor.button_template:
+#   custom_ui_state_card: state-card-custom-ui
+#   extra_data_template: !secret ip_broadlink
+# sensor.androidtv_template:
+#   custom_ui_state_card: state-card-custom-ui
+#   extra_data_template: !secret ip_androidtv
+# sensor.tv_template:
+#   custom_ui_state_card: state-card-custom-ui
+#   extra_data_template: !secret ip_tv
+sensor.speedtest_ping:
+  icon: mdi:clock-fast
+  friendly_name: 'Ping'
+sensor.speedtest_download:
+  icon: mdi:arrow-down
+  friendly_name: 'Download'
+sensor.speedtest_upload:
+  icon: mdi:arrow-up
+  friendly_name: 'Upload'
+script.restart_ha:
+  icon: mdi:power
+sensor.version:
+  icon: mdi:mdi:package-variant-closed
+  friendly_name: 'Version'
+
+script.remote_control:
+  custom_ui_state_card: state-card-tiles
+  config:
+    columns: 7
+    row_height: 75px
+    column_width: 62px
+    gap: 15px
+    color: '#262B38'
+    #color_on: 'var(--primary-color)'
+    color_on: '#ffffff'
+    color_off: '#ffffff'
+    entities:
+      - entity: switch.vol_up
+        caption: Volume Up
+        icon: mdi:volume-plus
+        column: 1
+        row: 1
+      - entity: switch.vol_down
+        caption: Volume Down
+        icon: mdi:volume-minus
+        column: 2
+        row: 1
+      - entity: switch.mute
+        caption: Mute
+        icon: mdi:volume-mute
+        column: 5
+        row: 1
+      - entity: switch.mixer
+        caption: Mixer
+        icon: mdi:tune
+        column: 3
+        row: 1
+      - entity: switch.tv
+        caption: TV
+        icon: mdi:television-classic
+        column: 4
+        row: 1
+      
+
+script.tv_remote_control:
+  custom_ui_state_card: state-card-tiles
+  config:
+    columns: 7
+    row_height: 75px
+    column_width: 62px
+    gap: 15px
+    color: '#262B38'
+    #color_on: 'var(--primary-color)'
+    color_on: '#ffffff'
+    color_off: '#ffffff'
+    entities:
+      - entity: switch.office_tv_onoff
+        caption: Power
+        icon: mdi:power
+        column: 1
+        row: 1
+      - entity: switch.up
+        caption: Up
+        icon: mdi:menu-up
+        column: 2
+        row: 1
+      - entity: switch.menu
+        caption: Menu
+        icon: mdi:menu
+        column: 3
+        row: 1
+      - entity: switch.left
+        caption: Left
+        icon: mdi:menu-left
+        column: 1
+        row: 2
+      - entity: switch.ok
+        caption: OK
+        icon: mdi:checkbox-blank-circle
+        column: 2
+        row: 2
+      - entity: switch.right
+        caption: Right
+        icon: mdi:menu-right
+        column: 3
+        row: 2
+      - entity: switch.av
+        caption: AV
+        icon: mdi:video-input-hdmi
+        column: 1
+        row: 3
+      - entity: switch.down
+        caption: Down
+        icon: mdi:menu-down
+        column: 2
+        row: 3
+      - entity: switch.exit
+        caption: Exit
+        icon: mdi:exit-to-app
+        column: 3
+        row: 3
+
+script.aircon_remote_control:
+  custom_ui_state_card: state-card-tiles
+  config:
+    columns: 7
+    row_height: 75px
+    column_width: 62px
+    gap: 15px
+    color: '#262B38'
+    #color_on: 'var(--primary-color)'
+    color_on: '#ffffff'
+    color_off: '#ffffff'
+    entities:
+      - entity: switch.auto_23c
+        caption: Airconditioning 23degC
+        icon: mdi:snowflake
+        column: 1
+        row: 1
+      - entity: switch.auto_25c
+        caption: Airconditioning 25degC
+        icon: mdi:snowflake
+        column: 2
+        row: 1
+      - entity: switch.auto_27c
+        caption: Airconditioning 27degC
+        icon: mdi:snowflake
+        column: 3
+        row: 1
+      # - entity: script.ac_hot
+      #   icon: mdi:white-balance-sunny
+      #   color: '#D55C0E'
+      #   column: 2
+      #   row: 2
+      # - entity: script.ac_cold
+      #   icon: mdi:mdi:snowflake
+      #   color: '#4FA7FF'
+      #   column: 3
+      #   row: 2
+        
+      # # Others
+      # - entity: script.mp_playpause
+      #   icon: mdi:play-pause
+      #   color: '#007009'
+      #   column: 1
+      #   row: 3
+      # - entity: script.sleep
+      #   icon: mdi:hotel
+      #   column: 2
+      #   row: 3
+      # - entity: script.all_off
+      #   icon: mdi:format-vertical-align-bottom
+      #   color: '#FF4F52'
+      #   column: 3
+      #   row: 3

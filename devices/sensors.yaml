@@ -1,0 +1,75 @@
+
+# BOM Weather
+- platform: bom
+  station: IDN60801.94757
+  name: Campbelltown
+  monitored_conditions:
+    - apparent_t
+    - cloud
+    - cloud_base_m
+    - cloud_oktas
+    - cloud_type_id
+    - cloud_type
+    - delta_t
+    - gust_kmh
+    - gust_kt
+    - air_temp
+    - dewpt
+    - press
+    - press_qnh
+    - press_msl
+    - press_tend
+    - rain_trace
+    - rel_hum
+    - sea_state
+    - swell_dir_worded
+    - swell_height
+    - swell_period
+    - vis_km
+    - weather
+    - wind_dir
+    - wind_spd_kmh
+    - wind_spd_kt
+
+- platform: wunderground
+  name: Weather Underground
+  api_key: 7e0d9f933bd5568a
+  monitored_conditions:
+    - location
+    - UV
+    - weather_1d_metric
+    - weather_1n_metric
+    - weather_2d_metric
+    - weather_2n_metric
+    - weather_3d_metric
+    - weather_3n_metric
+    - weather_4d_metric
+    - weather_4n_metric
+
+- platform: time_date
+  display_options:
+    - 'time'
+    - 'date'
+    - 'date_time'
+    - 'time_date'
+    - 'time_utc'
+
+- platform: speedtest
+  minute: 
+    - 0
+    - 30
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+
+- platform: systemmonitor
+  resources:
+    - type: since_last_boot
+    - type: processor_use
+    - type: memory_free
+    - type: disk_free
+      arg: /
+
+- platform: version
+  name: version

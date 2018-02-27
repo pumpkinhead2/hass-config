@@ -1,0 +1,15 @@
+- name: Watching
+  entities:
+    light.office_desk_lamp:
+      state: off
+
+- name: Concentrate
+  entities:
+    light.office_desk_lamp:
+      state: on
+
+- name: Normal
+  entities:
+    light.office_desk_lamp:
+      state: off
+      

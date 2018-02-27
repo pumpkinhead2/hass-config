@@ -1,0 +1,5 @@
+- platform: generic
+  still_image_url: https://radblast.wunderground.com/cgi-bin/radar/WUNIDS_map?station=003&brand=wui&num=6&delay=15&type=A0Q&frame=0&scale=0.125&noclutter=0&showstorms=0&mapx=400&mapy=240&centerx=400&centery=240&transx=0&transy=0&showlabels=1&severe=0&rainsnow=0&lightning=0&smooth=0&rand=25147560&lat=0&lon=0&label=you
+  name: Radar
+
+- platform: zoneminder

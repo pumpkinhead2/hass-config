@@ -1,0 +1,190 @@
+
+bc757406781c:
+  hide_if_away: false
+  icon:
+  mac: BC:75:74:06:78:1C
+  name: Pat
+  picture:
+  track: true
+  vendor: HUAWEI TECHNOLOGIES CO.,LTD
+
+
+0034da3f020a:
+  hide_if_away: false
+  icon:
+  mac: 00:34:DA:3F:02:0A
+  name: Des
+  picture:
+  track: true
+  vendor: LG Electronics (Mobile Communications)
+
+patricksipad2:
+  hide_if_away: false
+  icon:
+  mac: CC:44:63:E9:88:15
+  name: Patricks-iPad-2
+  picture:
+  track: true
+  vendor: Apple, Inc.
+
+android89773d8daf7a72af:
+  hide_if_away: false
+  icon:
+  mac: 28:E3:47:C0:3A:80
+  name: android-89773d8daf7a72af
+  picture:
+  track: true
+  vendor: Liteon Technology Corporation
+
+yeelinklightlamp1_miio45471439:
+  hide_if_away: false
+  icon:
+  mac: F0:B4:29:AE:39:12
+  name: yeelink-light-lamp1 miio45471439
+  picture:
+  track: true
+  vendor: Xiaomi Communications Co Ltd
+
+chuangmiirv2_miio65944759:
+  hide_if_away: false
+  icon:
+  mac: 34:CE:00:CD:49:52
+  name: chuangmi-ir-v2 miio65944759
+  picture:
+  track: true
+  vendor: XIAOMI Electronics,CO.,LTD
+
+lumigatewayv3_miio63225689:
+  hide_if_away: false
+  icon:
+  mac: 34:CE:00:FB:71:D1
+  name: lumi-gateway-v3 miio63225689
+  picture:
+  track: true
+  vendor: XIAOMI Electronics,CO.,LTD
+
+chromecast:
+  hide_if_away: false
+  icon:
+  mac: 54:60:09:86:70:DC
+  name: Chromecast
+  picture:
+  track: true
+  vendor: Google, Inc.
+
+ipad:
+  hide_if_away: false
+  icon:
+  mac: A0:99:9B:E4:04:6C
+  name: iPad
+  picture:
+  track: true
+  vendor: Apple, Inc.
+
+despinasmbp:
+  hide_if_away: false
+  icon:
+  mac: B8:E8:56:2F:DF:A0
+  name: Despinas-MBP
+  picture:
+  track: true
+  vendor: Apple, Inc.
+
+f0b429bf1569:
+  hide_if_away: false
+  icon:
+  mac: F0:B4:29:BF:15:69
+  name: f0b429bf1569
+  picture:
+  track: true
+  vendor: Xiaomi Communications Co Ltd
+
+esp_bdb19b:
+  hide_if_away: false
+  icon:
+  mac: F0:B4:29:BD:B1:9B
+  name: ESP BDB19B
+  picture:
+  track: true
+  vendor: Xiaomi Communications Co Ltd
+
+chewbacca:
+  hide_if_away: false
+  icon:
+  mac: 54:C9:DF:8D:1A:0D
+  name: CHEWBACCA
+  picture:
+  track: true
+  vendor: FN-LINK TECHNOLOGY LIMITED
+
+64bc0c4f24b4:
+  hide_if_away: false
+  icon:
+  mac: 64:BC:0C:4F:24:B4
+  name: 64bc0c4f24b4
+  picture:
+  track: true
+  vendor: LG Electronics (Mobile Communications)
+
+8c85905503ad:
+  hide_if_away: false
+  icon:
+  mac: 8C:85:90:55:03:AD
+  name: '*'
+  picture:
+  track: true
+  vendor: unknown
+
+mbp2012:
+  hide_if_away: false
+  icon:
+  mac: 14:10:9F:D5:D0:A3
+  name: MBP-2012
+  picture:
+  track: true
+  vendor: Apple, Inc.
+
+34ce00cea5fa:
+  hide_if_away: false
+  icon:
+  mac: 34:CE:00:CE:A5:FA
+  name: 34ce00cea5fa
+  picture:
+  track: true
+  vendor: unknown
+
+ac83f380ce9f:
+  hide_if_away: false
+  icon:
+  mac: AC:83:F3:80:CE:9F
+  name: '*'
+  picture:
+  track: true
+  vendor: AMPAK Technology, Inc.
+
+iphone:
+  hide_if_away: false
+  icon:
+  mac: A4:C3:61:C1:31:05
+  name: iPhone
+  picture:
+  track: true
+  vendor: Apple, Inc.
+
+ipcamrcam034033ungshra0:
+  hide_if_away: false
+  icon:
+  mac: 20:F4:1B:EC:E9:6E
+  name: ipcam-RCAM-034033-UNGSH-ra0
+  picture:
+  track: true
+  vendor: Shenzhen Bilian electronic CO.,LTD
+
+ac83f37c03e2:
+  hide_if_away: false
+  icon:
+  mac: AC:83:F3:7C:03:E2
+  name: ac83f37c03e2
+  picture:
+  track: true
+  vendor: AMPAK Technology, Inc.

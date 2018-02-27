@@ -1,0 +1,11 @@
+
+# Netgear WNDR3700 Router
+- platform: ddwrt
+  host: 192.168.1.2
+  username: admin
+  password: !secret wndr3700router_pass
+  interval_seconds: 10
+  consider_home: 180
+  track_new_devices: yes
+
+- platform: owntracks

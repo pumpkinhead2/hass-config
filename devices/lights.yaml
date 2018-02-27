@@ -1,0 +1,18 @@
+
+# Xiaomi Smart Desk Lamp
+- platform: yeelight_desklamp
+  name: "Office Desk Lamp"
+  host: 192.168.1.104
+  token: !secret yeelight_desklamp_token
+
+# Xiaomi Philips Eyecare Smart Lamp 2 Pat
+- platform: xiaomi_eyecare_lamp
+  name: "Bedroom Lamp Pat"
+  host: 192.168.1.146
+  token: !secret xiaomi_eyecare_lamp_token
+
+# Xiaomi Philips Eyecare Smart Lamp 2 Des
+- platform: xiaomi_eyecare_lamp
+  name: "Bedroom Lamp Des"
+  host: 192.168.1.112
+  token: !secret xiaomi_eyecare_lamp_token2

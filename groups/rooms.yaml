@@ -1,0 +1,16 @@
+Rooms:
+  view: yes
+  icon: mdi:sofa
+  entities:
+    - group.office_scenes
+    - group.office
+    - group.living_room
+
+Office Scenes:
+  - scene.concentrate
+  - scene.watching
+  - scene.normal
+
+Living Room Scenes:
+  - scene.gatewaynight
+  - scene.gatewayday

@@ -1,0 +1,27 @@
+Metadata-Version: 2.0
+Name: python-miio
+Version: 0.3.0
+Summary: Python library for interfacing with Xiaomi smart appliances
+Home-page: https://github.com/rytilahti/python-miio
+Author: Teemu Rytilahti
+Author-email: tpr@iki.fi
+License: GPLv3
+Description-Content-Type: UNKNOWN
+Keywords: xiaomi miio vacuum
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: attrs
+Requires-Dist: click
+Requires-Dist: construct
+Requires-Dist: cryptography
+Requires-Dist: pretty-cron
+Requires-Dist: pycrypto
+Requires-Dist: typing
+Requires-Dist: zeroconf
+
+UNKNOWN
+
+

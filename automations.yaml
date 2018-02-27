@@ -1,0 +1,101 @@
+- alias: Set theme at startup
+  initial_state: 'on'
+  trigger:
+  - platform: homeassistant
+    event: start
+  action:
+    service: frontend.set_theme
+    data:
+      name: happy
+- alias: Set dark theme for the night
+  initial_state: true
+  trigger:
+  - platform: time
+    at: '21:00'
+  action:
+  - service: frontend.set_theme
+    data:
+      name: darkred
+- action:
+  - alias: Push Notification
+    data:
+      message: The front door has been opened.
+      title: Front Door Opened
+    service: notify.pushbullet
+  - alias: Play door confirmation
+    data:
+      gw_mac: 34:CE:00:FB:71:D1
+      ringtone_id: 10003
+      ringtone_vol: 20
+    service: xiaomi_aqara.play_ringtone
+  alias: Front Door Opened
+  condition: []
+  id: '1508638107332'
+  trigger:
+  - entity_id: binary_sensor.door_window_sensor_158d00019f5182
+    from: 'off'
+    platform: state
+    to: 'on'
+- action:
+  - alias: Bedroom Lamp Toggle
+    data:
+      entity_id: group.bedroom
+    service: light.toggle
+  alias: Bedroom Lamp Toggle
+  condition: []
+  id: '1508759804249'
+  trigger:
+  - event_data:
+      click_type: single
+      entity_id: binary_sensor.switch_158d00016c0e8e
+    event_type: click
+    platform: event
+- action:
+  - alias: Doorbell Button Pressed
+    data:
+      gw_mac: 34:CE:00:FB:71:D1
+      ringtone_id: 10005
+      ringtone_vol: 80
+    service: xiaomi_aqara.play_ringtone
+  - alias: Push Notification
+    data:
+      message: The doorbell was pressed
+      title: Doorbell pressed
+    service: notify.pushbullet
+  alias: Doorbell
+  condition: []
+  id: '1508887187082'
+  trigger:
+  - event_data:
+      click_type: single
+      entity_id: binary_sensor.switch_158d00016be03c
+    event_type: click
+    platform: event
+- action:
+  - alias: Cube Flip Aircon ON
+    data:
+      entity_id: switch.auto_23c
+    service: switch.toggle
+  alias: Gesture Aircon On
+  condition: []
+  id: '1516318269980'
+  trigger:
+  - event_data:
+      action_type: flip90
+      entity_id: binary_sensor.cube_158d000117cede
+    event_type: cube_action
+    platform: event
+- action:
+  - alias: Gesture Desk Lamp
+    data:
+      entity_id: light.office_desk_lamp
+    service: light.toggle
+  alias: Gesture Desk Lamp
+  condition: []
+  id: '1516320810711'
+  trigger:
+  - event_data:
+      action_type: tap_twice
+      entity_id: binary_sensor.cube_158d000117cede
+    event_type: cube_action
+    platform: event

@@ -1,0 +1,15 @@
+remote_control:
+  name: Amplifier
+  entities:
+    - script.remote_control
+
+
+tv_remote_control:
+  name: TV
+  entities:
+    - script.tv_remote_control
+
+aircon_remote_control:
+  name: Airconditioning
+  entities:
+    - script.aircon_remote_control
